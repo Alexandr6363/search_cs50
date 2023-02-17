@@ -20,6 +20,7 @@
                 line-height: 18px; 
                 padding: 36px; 
                 text-align: right;
+                font-family: arial, sans-serif;
             }
             .form-input {
                 width: 50%;
@@ -29,18 +30,17 @@
                 height: 25px;
                 border: 1px solid #dfe1e5;
                 font-size: 13px; 
-                padding-left: 5px;
+                padding-left: 0px;
             }
             .form-button {
                 font-size: 14px; 
-                background-color: #f8f9fa;
+                background-color: #4d90fe;
                 border: 1px solid #f8f9fa;
                 border-radius: 4px;
                 text-align: center;
                 height: 36px;
                 min-width: 54px;
-                margin: 11px;
-                float: right;
+/*                margin: 5px;*/
 
             }
             .form-button:hover {
@@ -48,27 +48,43 @@
             }
             .my_search {
                 font-family: arial, sans-serif;
-                color: #003300;
-                font-size: 38px; 
-                line-height: 38px; 
-                text-align: center;
-                text-shadow: 3px 4px 4px #A9A9A9;
+                color: #FF4019;
+                font-size: 22px; 
+                line-height: 25px; 
+                text-align: left;
+                padding: 30px;
             }
             .flex-container {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                padding: 20px;
+                padding: 10px;
             }
             .text-describe-search {
                 min-width: 250px;
                 font-family: arial, sans-serif;
-                padding: 20px;
+                padding: 10px;
             }
             #find-page {
                 font-size: 28px;
-                padding: 20px;
+                padding: 30px;
                 font-family: arial, sans-serif;
+            }
+            #button-advanced {
+                text-align: right;
+                max-width: 550px;
+                min-width: 400px;
+            }
+            #line {
+                border-bottom: 1px solid #ebebeb;
+            }
+            #logo {
+                float: left;
+                font-size: 23px; 
+                line-height: 23px; 
+                padding: 0px; 
+                text-align: right; 
+                font-family: arial, sans-serif;              
             }
 
         </style>
@@ -76,10 +92,13 @@
     </head>
     <body>
         <div class="nav">
+            <label id="logo">"MySearch"</label>
             <a href="index.html">Google search</a>
             <a href="images.html">Image search</a>
             <a href="adv.html">Advanced search</a>
         </div>
+            <p><h2 class="my_search">Advanced MySearch</h2>
+        <div id="line"></div>
         <div class="mb-3">
             <form action="https://www.google.ru/search">
                 <div id="find-page">Find pages with...</div>
@@ -120,7 +139,7 @@
                     <div class="text-describe-search">
                         
                     </div> 
-                    <div>
+                    <div id="button-advanced">
                         <input class="form-button" value="Advanced Search" type="submit">
                     </div> 
                 </div>                
