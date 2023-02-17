@@ -1,16 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <style type="text/css">
+            a {
+                margin: 20px;
+            }
+            .mb-3 {
+                font-size: 18px; 
+                line-height: 18px; 
+                padding: 16px; 
+                border-radius: 19px; 
+                margin-top: 300px;
+                text-align: center;
+                
+
+                }
+            .nav {
+                font-size: 18px; 
+                line-height: 18px; 
+                padding: 36px; 
+                text-align: right;
+            }
+            .form-input {
+                width: 50%;
+                max-width: 550px;
+                border-radius: 24px;
+                height: 44px;
+                border: 1px solid #dfe1e5;
+                font-size: 28px; 
+                padding-left: 20px;
+            }
+            .form-button {
+                font-size: 14px; 
+                background-color: #f8f9fa;
+                border: 1px solid #f8f9fa;
+                border-radius: 4px;
+                text-align: center;
+                height: 36px;
+                min-width: 54px;
+                margin: 11px;
+
+            }
+            .form-button:hover {
+                border: 1px solid #4019FF;
+            }
+            .my_search {
+                font-family: arial, sans-serif;
+                color: #003300;
+                font-size: 38px; 
+                line-height: 38px; 
+                text-align: center;
+                text-shadow: 3px 4px 4px #A9A9A9;
+            }
+
+        </style>
         <title>Images search</title>
     </head>
     <body>
-        <a href="index.html">Google search</a>
-        <a href="images.html">Image search</a>
-        <a href="adv.html">Advanced search</a>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input hidden="true" name="tbm" value="isch">
-            <input type="submit" value="Google Search">
-        </form>
+        <div class="nav">
+            <a href="index.html">Google search</a>
+            <a href="images.html">Image search</a>
+            <a href="adv.html">Advanced search</a>            
+        </div>
+
+        <div class="mb-3">
+            <p><h1 class="my_search">MySearch - Images</h1>
+            <form action="https://google.com/search">
+                <input class="form-input" type="text" name="q">
+                <input hidden="true" name="tbm" value="isch">
+                <p><input class="form-button" type="submit" value="Google Search">
+            </form>            
+        </div>
+
     </body>
 </html>
