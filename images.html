@@ -1,84 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <style type="text/css">
-            a {
-                margin: 20px;
-            }
-            .mb-3 {
-                font-size: 18px; 
-                line-height: 18px; 
-                padding: 16px; 
-                border-radius: 19px; 
-                margin-top: 300px;
-                text-align: center;
-                
 
-                }
-            .nav {
-                font-size: 18px; 
-                line-height: 18px; 
-                padding: 36px; 
-                text-align: right;
-                font-family: arial, sans-serif;
-            }
-            .form-input {
-                width: 50%;
-                max-width: 550px;
-                border-radius: 24px;
-                height: 44px;
-                border: 1px solid #dfe1e5;
-                font-size: 28px; 
-                padding-left: 20px;
-            }
-            .form-button {
-                font-size: 14px; 
-                background-color: #f8f9fa;
-                border: 1px solid #f8f9fa;
-                border-radius: 4px;
-                text-align: center;
-                height: 36px;
-                min-width: 54px;
-                margin: 11px;
+<head>
+    <title>Image Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-            }
-            .form-button:hover {
-                border: 1px solid #4019FF;
-            }
-            .my_search {
-                font-family: arial, sans-serif;
-                color: #003300;
-                font-size: 38px; 
-                line-height: 38px; 
-                text-align: center;
-                text-shadow: 3px 4px 4px #A9A9A9;
-            }
-            #logo {
-                float: left;
-                font-size: 23px; 
-                line-height: 23px; 
-                padding: 0px; 
-                text-align: right; 
-                font-family: arial, sans-serif;              
-            }
+<body>
+    <div class="nav">
+        <label id="logo">"MySearch"</label>
+        <a href="index.html">Google search</a>
+    </div>
 
-        </style>
-        <title>Images search</title>
-    </head>
-    <body>
-        <div class="nav">
-            <label id="logo">"MySearch"</label>
-            <a href="index.html">Google search</a>
-        </div>
+    <div class="search">
+        <p>
+        <h1 class="search--title">MySearch - Images</h1>
+        <form action="https://google.com/search">
+            <input placeholder="Image search" class="search--form-input" type="text" name="q">
+            <input hidden="true" name="tbm" value="isch">
+            <p><input class="form-button" type="submit" value="Google Search">
+        </form>
+    </div>
 
-        <div class="mb-3">
-            <p><h1 class="my_search">MySearch - Images</h1>
-            <form action="https://google.com/search">
-                <input class="form-input" type="text" name="q">
-                <input hidden="true" name="tbm" value="isch">
-                <p><input class="form-button" type="submit" value="Google Search">
-            </form>            
-        </div>
+</body>
 
-    </body>
 </html>
